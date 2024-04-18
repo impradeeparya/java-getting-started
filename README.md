@@ -48,3 +48,22 @@ Objects move between generations based on their lifespan, with minor and major g
 1. Recap of the benefits of garbage collection in Java and its role in simplifying memory management.
 2. Acknowledgment of the standardization of garbage collection across various programming languages.
 3. Gratitude to the viewers for watching and encouragement to stay tuned for future content.
+
+
+# Features
+## Java 11 Features:
+1. **New String Class Methods:** Java 11 introduced several new methods to the String class, including `isBlank`, `lines`, `strip`, `stripLeading`, `stripTrailing`, and `repeat`. These methods facilitate string manipulation and formatting.
+2. **Collections API Enhancements:** The `List`, `Map`, and `Set` interfaces gained a new static method called `copyOf`, which returns an unmodifiable copy of the given collection. Additionally, the Stream API received the `toUnmodifiableList` method.
+3. **Stream API Improvements:** Java 11 added a `not()` method to the `Predicate` interface for negating predicates, and an `elseThrow` method to the `Optional` interface for throwing exceptions if no value is present.
+4. **Try-With-Resources Enhancement:** Developers can now manage resources without declaring a new variable using the try-with-resources statement if the resource is referenced by a final or effectively final variable.
+5. **Private Methods in Interfaces:** Java 11 introduced the ability to add private methods to interfaces, allowing developers to split lengthy default methods for better code organization.
+6. **NIO Package Enhancements:** New methods `writeString` and `readString` were added to the NIO package for writing and reading strings to and from files.
+7. **HTTP Client API:** The HTTP client API now uses the builder pattern, making it easier to create, define, and use HTTP requests.
+
+## Java 17 Features:
+1. **String Class Enhancements:** Java 17 introduced the `indent` and `transform` methods to the String class, providing additional functionality for adjusting indentation and applying transformations to strings.
+2. **Stream API Additions:** The `Collectors` class in the Stream API gained the `teeing` method, which processes elements in a stream with two downstream collectors and merges their results.
+3. **Pattern Matching for `instanceof`:** Java 17 introduced pattern matching for `instanceof`, allowing developers to initialize variables and use them within the `instanceof` check without additional casting.
+4. **Improved NullPointerException Messages:** NullPointerException messages in Java 17 provide more detailed information, including the exact location where the exception occurred.
+5. **Records:** Records enable the creation of immutable data classes with concise syntax, reducing boilerplate code.
+6. **Sealed Classes:** Sealed classes provide more control over which classes can extend a superclass, enhancing encapsulation and security in class hierarchies.
